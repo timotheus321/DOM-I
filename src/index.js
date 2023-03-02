@@ -11,6 +11,7 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
     "h1": "DOM Is Awesome",
     "button": "Get Started",
   },
+  //features-h4
   "main-content": {
     "features-h4": "Features",
     "features-content": "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
@@ -72,15 +73,15 @@ topContent.children[1].children[1].textContent = siteContent['main-content']['ab
 const bottomContent = document.querySelector('.bottom-content')
 const h4sBottom = bottomContent.querySelectorAll('h4')
 h4sBottom[0].textContent = siteContent['main-content']['services-h4']
-h4sBottom[1].textContent = siteContent['main-content']['property-h4']
+h4sBottom[1].textContent = siteContent['main-content']['product-h4']
 h4sBottom[2].textContent = siteContent['main-content']['vision-h4']
 const psBottom = bottomContent.querySelectorAll('p')
 psBottom[0].textContent = siteContent['main-content']['services-content']
-psBottom[1].textContent = siteContent['main-content']['property-content']
+psBottom[1].textContent = siteContent['main-content']['product-content']
 psBottom[2].textContent = siteContent['main-content']['vision-content']
 
 // cta
-document.querySelector('.cta .cta-text h1').textContent = siteContent.h1
+document.querySelector('.cta .cta-text h1').textContent = siteContent.cta.h1
 document.querySelector('.cta .cta-text button').textContent = siteContent.cta.button
 
 // nav links
@@ -90,3 +91,4 @@ navLinks.forEach((link,idx) =>{
     link.textContent = navLinksTexts[idx]
     link.classList.add('italic')
 })
+
